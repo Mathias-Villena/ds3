@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f6f9fb; /* tono suave para evitar mucho blanco */
 }
-
 
 .scrollbar-hide {
     scrollbar-width: none; /* Para Firefox */
@@ -13,3 +13,207 @@ body {
 .scrollbar-hide::-webkit-scrollbar {
     display: none; /* Para Chrome, Safari y Opera */
   }
+
+/* Estilos adicionales para productos */
+#img_main {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+#img_main:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 30px rgba(13,39,77,0.08);
+}
+.product-thumbs img {
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+  border-radius: 6px;
+}
+.product-thumbs img:hover {
+  transform: translateY(-4px);
+  opacity: 0.95;
+}
+/* Botón comprar en móvil full width */
+@media (max-width: 640px) {
+  .buy-full-mobile {
+    display: block !important;
+    width: 100% !important;
+    text-align: center;
+  }
+}
+
+/* Animaciones y microinteracciones */
+.fade-up {
+  transform: translateY(8px);
+  opacity: 0;
+  transition: transform 0.35s ease, opacity 0.35s ease;
+}
+.fade-up.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+.button-pressed {
+  transform: scale(0.98);
+  transition: transform 0.08s ease;
+}
+
+/* Carrusel de marcas */
+#carousel, #amp-carousel {
+  scroll-behavior: smooth;
+  display: flex;
+  align-items: center;
+}
+#carousel::-webkit-scrollbar, #amp-carousel::-webkit-scrollbar { height: 8px; }
+#carousel::-webkit-scrollbar-thumb, #amp-carousel::-webkit-scrollbar-thumb { background: rgba(13,39,77,0.12); border-radius: 8px; }
+#carousel .snap-start, #amp-carousel .snap-start { scroll-snap-align: start; background: #f8fafc; }
+#carousel .snap-start img, #amp-carousel .snap-start img { max-height: 54px; width: auto; }
+#carousel-prev, #carousel-next { z-index: 10; }
+@media (max-width: 768px) {
+  #carousel .snap-start { width: 72%; min-width: 260px; }
+  #amp-carousel .snap-start { width: 48%; min-width: 180px; }
+}
+
+/* Mobile prices toggle */
+#toggle-prices i { transition: transform .2s ease; }
+#toggle-prices i.fa-rotate-180 { transform: rotate(180deg); }
+
+/* Small visual polish */
+#brands-carousel h3 { color: #0D274D; }
+
+/* Visual tweaks: tighter spacing, better typography */
+body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+h1, h2, h3 { line-height: 1.18; }
+h1 { font-size: 1.1rem; }
+
+/* Product header & cards */
+.text-center.mb-6 { margin-bottom: 1.25rem; }
+.product-card { background: linear-gradient(180deg,#ffffff,#f6f9fb); transition: transform .16s ease, box-shadow .16s ease; border: 1px solid rgba(13,39,77,0.03); }
+.product-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(13,39,77,0.06); }
+
+/* Toast styling */
+#toast { z-index: 60; }
+#toast.show { opacity: 1; pointer-events: auto; }
+
+/* Slightly reduce vertical padding on sections for a denser layout */
+.section-compact { padding-top: 1rem; padding-bottom: 1rem; }
+
+/* small improvements to cards and micro-animations */
+.group .line-clamp-2 { color: #1f2937; }
+
+
+/* WhatsApp modal & FAB */
+#contact-fab button { box-shadow: 0 10px 30px rgba(13,39,77,0.12); transition: transform .12s ease, box-shadow .12s ease; }
+#contact-fab button:active { transform: scale(.96); }
+#contact-modal { transition: opacity .14s ease, transform .14s ease; }
+#contact-modal .bg-white { animation: pop .14s ease; }
+@keyframes pop { from { transform: scale(.98); opacity: 0 } to { transform: scale(1); opacity: 1 } }
+
+/* ensure modal centers on very small screens */
+@media (max-width: 420px) { #contact-modal > div[role="dialog"] { padding: 1rem; } }
+
+/* Reset: eliminar cualquier padding-top innecesario */
+.site-top-offset {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* Contenido principal ocupa todo el ancho */
+.main-content {
+  padding-right: 0 !important;
+  width: 100% !important;
+  padding-top: 0 !important;
+  max-width: none !important;
+}
+
+main {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* Dropdown de precios */
+#prices-dropdown {
+  display: none;
+}
+
+#prices-dropdown:not(.hidden) {
+  display: block !important;
+  animation: fadeInDown 0.2s ease-out;
+  z-index: 9999 !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Asegurar que el botón del dropdown funcione correctamente */
+#prices-button {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.relative.group {
+  position: relative;
+}
+
+/* Asegurar que el navbar sea siempre visible */
+nav,
+nav[data-main-inserted] {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 50 !important;
+  background-color: white !important;
+  width: 100% !important;
+}
+
+nav *,
+nav[data-main-inserted] * {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+body > nav {
+  display: block !important;
+  visibility: visible !important;
+}
+
+/* Safety: ensure main visible and not accidentally hidden */
+main, .main-content { display: block !important; }
+/* Ensure overlay hidden doesn't block interaction: keep it invisible by default and only show via .menu-overlay-visible */
+#menu-overlay { display: none !important; opacity: 0 !important; pointer-events: none !important; }
+#menu-overlay.menu-overlay-visible { display: block !important; opacity: 1 !important; pointer-events: auto !important; }
+
+/* Force main visible and avoid being hidden behind overlay or by scripts */
+main, .main-content { display: block !important; visibility: visible !important; opacity: 1 !important; }
+
+/* Emergency fallback: ensure content is always below the navbar */
+.site-top-offset { padding-top: 0 !important; margin-top: 0 !important; }
+
+/* EMERGENCY VISIBILITY: force main content and descendants to be visible and above unintended overlays */
+.site-top-offset, .main-content {
+  position: relative !important;
+  z-index: 30 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+.site-top-offset * {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+
+

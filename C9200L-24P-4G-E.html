@@ -26,6 +26,205 @@ Switch Cisco Catalyst  C9200L-24P,  capa L3 con 24 puertos Gigabit PoE+ (370W) ,
 </head>
 
 <body>
+<nav class="bg-white w-full shadow-md border sticky top-0 z-50" data-main-inserted="1">
+  <div class="container mx-auto px-4">
+    <!-- Desktop Navbar -->
+    <div class="hidden sm:flex justify-between items-center py-4">
+      <!-- Logo y nombre -->
+      <div class="flex items-center">
+        <img
+          src="https://www.ds3comunicaciones.com/mikrotik/images/Logo1.jpg"
+          alt="NetPeru Logo"
+          class="h-12 mr-3"
+        />
+      </div>
+
+      <!-- Info de contacto -->
+      <div class="flex space-x-8 text-black">
+        <div class="flex items-center">
+          <i class="fas fa-phone-alt mr-2 text-black "></i>
+          <div>
+            <p class="text-sm font-bold">533-4339</p>
+            <p class="text-sm font-bold">994-428-965</p>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <i class="fas fa-phone-alt mr-2 text-black "></i>
+          <div>
+            <p class="text-sm font-bold">99653-3223</p>
+            <p class="text-sm font-bold">937-514-867</p>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <i class="fas fa-envelope mr-2 text-black "></i>
+          <span class="text-sm font-bold">netperu100@hotmail.com</span>
+        </div>
+        <div class="flex items-center">
+          <i class="fas fa-map-marker-alt mr-2 text-black "></i>
+          <span class="text-sm font-bold">Lima, PERÚ</span>
+        </div>
+        <div>
+          <img src="https://www.ds3comunicaciones.com/cisco/images/cisco-gif.gif" alt="cisco" class="h-10" />
+        </div>
+      </div>
+
+      <!-- Botón de búsqueda -->
+      <div class="flex items-center">
+        <button
+          id="search-button"
+          class="p-2 rounded-full hover:bg-gray-100 transition-colors"
+        >
+          <i class="fas fa-search text-black"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navbar -->
+    <div class="lg:hidden flex flex-col gap-2">
+      <!-- navbar superior  -->
+      <div class="flex justify-between items-center py-2">
+        <!-- div izquierdo -->
+        <div class="flex gap-1">
+          <!-- boton hamburgesa -->
+          <button
+            id="mobile-menu-button"
+            class="p-2 rounded-full hover:bg-gray-300 transition-colors"
+          >
+            <i class="fas fa-bars text-black"></i>
+          </button>
+
+          <!-- Logo -->
+          <div class="flex items-center gap-2">
+            <img
+              src="https://www.ds3comunicaciones.com/mikrotik/images/Logo1.jpg"
+              alt="NetPeru Logo"
+              class="h-10"
+            />
+            <img
+              src="http://www.ds3comunicaciones.com/cisco/images/logo-cisco.gif"
+              alt="NetPeru Logo"
+              class="h-10"
+            />
+          </div>
+        </div>
+
+        <!-- Botones buscar -->
+        <button
+          id="mobile-search-button"
+          class="p-2 rounded-md hover:bg-gray-300 transition-colors border border-black flex gap-3 items-center"
+        >
+          <i class="fas fa-search text-black"></i>
+        </button>
+      </div>
+
+      <!-- nabvar inferior -->
+      <div class="py-2 pl-3">
+        <div class="flex items-start">
+          <i class="fas fa-phone-alt mt-1 mr-1 text-black"></i>
+          <p class="">996533223</p>
+          <i class="pl-4 fas fa-phone-alt mt-1 mr-1 text-black"></i>
+          <p class="">994428965</p>
+        </div>
+        <div class="flex items-center">
+          <i class="fas fa-envelope mr-1 text-black"></i>
+          <span>netperu100@hotmail.com</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menú móvil desplegable - Lado derecho -->
+  <div
+    id="mobile-menu"
+    class="fixed top-0 left-0 h-full w-80 bg-white shadow-xl z-50 transform -translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto"
+  >
+    <!-- Botón de cerrar -->
+    <div class="flex justify-end p-4">
+      <button id="close-menu" class="text-gray-500 hover:text-gray-700">
+        <i class="fas fa-times text-2xl"></i>
+      </button>
+    </div>
+        <div class="flex justify-between items-center py-2">
+          <!-- div izquierdo -->
+          <div class="flex gap-1">
+            <!-- boton hamburgesa -->
+            <button id="mobile-menu-button" class="p-2 rounded-full hover:bg-gray-300 transition-colors">
+              <i class="fas fa-bars text-black"></i>
+            </button>
+
+            <!-- Logo -->
+            <div class="flex items-center gap-2">
+              <img src="https://www.ds3comunicaciones.com/mikrotik/images/Logo1.jpg" alt="NetPeru Logo" class="h-10" />
+              <img src="http://www.ds3comunicaciones.com/cisco/images/logo-cisco.gif" alt="NetPeru Logo" class="h-10" />
+            </div>
+          </div>
+
+          <!-- Botones buscar -->
+          <button id="mobile-search-button" class="p-2 rounded-md hover:bg-gray-300 transition-colors border border-black flex gap-3 items-center">
+            <i class="fas fa-search text-black"></i>
+          </button>
+        </div>
+
+        <!-- nabvar inferior -->
+        <div class="py-2 pl-3">
+          <div class="flex items-start">
+            <i class="fas fa-phone-alt mt-1 mr-1 text-black"></i>
+            <p class="">996533223</p>
+            <i class="pl-4 fas fa-phone-alt mt-1 mr-1 text-black"></i>
+            <p class="">994428965</p>
+          </div>
+          <div class="flex items-center">
+            <i class="fas fa-envelope mr-1 text-black"></i>
+            <span>netperu100@hotmail.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menú móvil desplegable - Lado derecho -->
+    <div id="mobile-menu" class="fixed top-0 left-0 h-full w-80 bg-white shadow-xl z-50 transform -translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto">
+      <!-- Botón de cerrar -->
+      <div class="flex justify-end p-4">
+        <button id="close-menu" class="text-gray-500 hover:text-gray-700">
+          <i class="fas fa-times text-2xl"></i>
+        </button>
+      </div>
+
+      <!-- Contenido del menú -->
+      <div class="px-6 pb-8">
+        <!-- Enlaces adicionales -->
+        <div class="">
+          <div class="flex flex-wrap justify-start gap-2">
+            <a href="http://ds3comunicaciones.com/cisco/precios_cisco_b.html" id="menu" class="border-b w-full block py-2 font-medium text-blue-500 hover:text-blue-600 transition-colors duration-200 text-sm md:text-base">Lista Completa</a>
+            <a href="http://ds3comunicaciones.com/cisco/precios_cisco_access_point_b.html" id="menu" class="border-b w-full block py-2 font-medium text-blue-500 hover:text-blue-600 transition-colors duration-200 text-sm md:text-base">Access Point</a>
+            <a href="http://ds3comunicaciones.com/cisco/precios_cisco_switch_small_bussines_b.html" id="menu" class="border-b w-full block py-2 font-medium text-blue-500 hover:text-blue-600 transition-colors duration-200 text-sm md:text-base">Switch Small Business</a>
+            <a href="http://ds3comunicaciones.com/cisco/precios_cisco_switch_catalyst_b.html" id="menu" class="border-b w-full block py-2 font-medium text-blue-500 hover:text-blue-600 transition-colors duration-200 text-sm md:text-base">Switch Catalyst</a>
+            <a href="http://ds3comunicaciones.com/cisco/precios_cisco_meraki_b.html" id="menu" class="border-b w-full block py-2 font-medium text-blue-500 hover:text-blue-600 transition-colors duration-200 text-sm md:text-base">Cisco Meraki</a>
+            <a href="http://ds3comunicaciones.com/cisco/precios_cisco_nexus_b.html" id="menu" class="border-b w-full block py-2 font-medium text-blue-500 hover:text-blue-600 transition-colors duration-200 text-sm md:text-base">Cisco Nexus</a>
+            <a href="http://ds3comunicaciones.com/cisco/precios_cisco_router_b.html" id="menu" class="border-b w-full block py-2 font-medium text-blue-500 hover:text-blue-600 transition-colors duration-200 text-sm md:text-base">Routers</a>
+          </div>
+        </div>
+
+        <!-- Lista de precios (desplegable) -->
+        <div class="">
+          <details class="group">
+            <summary class="flex justify-between items-center cursor-pointer list-none py-3 border-b">
+              <span class="font-bold text-gray-800">Lista de Precios</span>
+              <i class="fas fa-chevron-down text-gray-500 group-open:rotate-180 transition-transform"></i>
+            </summary>
+            <div class="mt-2">
+              <ul class="flex flex-col gap-2">
+                <li class="hover:bg-blue-50 rounded transition-colors"><a href="https://www.ds3comunicaciones.com/AMP/precios_amp.html" target="_blank" class="block px-3 py-1.5 text-sm text-blue-600 hover:underline font-medium">Lista de precios AMP</a></li>
+                <li class="hover:bg-blue-50 rounded transition-colors"><a href="https://www.ds3comunicaciones.com/amphenol/precios_amphenol.html" target="_blank" class="block px-3 py-1.5 text-sm text-blue-600 hover:underline font-medium">Lista de precios Amphenol</a></li>
+                <li class="hover:bg-blue-50 rounded transition-colors"><a href="https://www.ds3comunicaciones.com/andrew/precios_andrew.html" target="_blank" class="block px-3 py-1.5 text-sm text-blue-600 hover:underline font-medium">Lista de precios Andrew</a></li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </nav>
+
   <!-- SUBMENU DE MARCA DEPENDIENDO DEL PRODUCTO -->
   <nav class="bg-white border-b border-gray-200 shadow-sm">
     <div class="relative">
@@ -109,7 +308,7 @@ Switch Cisco Catalyst  C9200L-24P,  capa L3 con 24 puertos Gigabit PoE+ (370W) ,
   </nav>
 
   <!-- CONTENIDO DEL PRODUCTO -->
-  <main class="">
+  <main class="site-top-offset">
     <!-- CASCADA DE NAVEGACIÓN RESPONSIVE "MARCA | PRODUCTO | NOMBRE" -->
     <div
       class="border px-3 py-2 text-xs md:text-sm text-slate-600 flex flex-nowrap items-center gap-1 overflow-x-auto scrollbar-hide whitespace-nowrap">
@@ -137,7 +336,7 @@ Switch Cisco Catalyst  C9200L-24P,  capa L3 con 24 puertos Gigabit PoE+ (370W) ,
       <div class="flex flex-col md:flex-row md:justify-evenly  mx-auto">
         <!-- SIDEBAR DE MARCAS (oculto en móvil) -->
         <aside
-          class="hidden lg:block bg-white p-2 rounded-lg shadow-md w-full md:w-48 lg:w-56 h-[80vh] overflow-y-auto scrollbar-hide">
+          class="hidden"> <!-- Oculto: usamos carrusel en la página en su lugar -->
           <!-- Título -->
           <h2 class="text-lg font-bold text-gray-800 mb-4 pb-2 border-b">
             Nuestras Marcas
@@ -288,7 +487,7 @@ Switch Cisco Catalyst  C9200L-24P,  capa L3 con 24 puertos Gigabit PoE+ (370W) ,
         </aside>
 
         <!-- CONTENIDO PRINCIPAL DE PRODUCTOS (siempre visible) -->
-        <div class="w-full lg:w-4/6 bg-white  rounded-lg shadow">
+        <div class="w-full lg:w-4/6 bg-slate-50  rounded-lg shadow">
           <div class="mx-auto max-w-[1200px] w-full">
             <!-- Contenedor principal del producto -->
             <div id="information-section" class="mt-5 flex flex-col lg:flex-row gap-6 flex-wrap">
@@ -298,7 +497,7 @@ Switch Cisco Catalyst  C9200L-24P,  capa L3 con 24 puertos Gigabit PoE+ (370W) ,
                 <div class="lg:w-1/2">
                   <!-- Imagen principal -->
                   <div class="bg-white rounded-lg shadow-sm p-4">
-                    <div class="w-full h-[400px] flex items-center justify-center overflow-hidden">
+                    <div class="w-full img-wrapper">
                       <img id="img_main"
                         src="https://web.netperu100.com/cisco/catalyst/images/C9200L-24P-4G-E_front.jpg"
                         alt="Switch Catalyst 2960" class="max-h-full max-w-full object-contain cursor-pointer"
@@ -695,7 +894,7 @@ Switch Cisco Catalyst  C9200L-24P,  capa L3 con 24 puertos Gigabit PoE+ (370W) ,
 
         <!-- SIDEBAR DE LISTA DE PRECIOS (oculto en móvil) -->
         <aside id="links-sidebar"
-          class="hidden lg:block w-full md:w-1/5 lg:w-1/6 bg-white p-2 rounded-lg shadow-md h-[80vh] overflow-y-auto scrollbar-hide">
+          class="hidden md:block w-full md:w-1/5 lg:w-1/6 bg-white p-2 rounded-lg shadow-md h-auto lg:h-[80vh] overflow-y-auto scrollbar-hide">
           <div class="links-section bg-white">
             <h3 class="text-base font-bold text-black mb-3 border-b pb-2">
               Listas de Precios
@@ -842,12 +1041,64 @@ Switch Cisco Catalyst  C9200L-24P,  capa L3 con 24 puertos Gigabit PoE+ (370W) ,
       </div>
     </div>
 
+    <!-- Mobile: Lista de Precios (colapsable) -->
+    <div class="lg:hidden bg-white p-4 rounded-lg shadow-md mb-6 mx-4">
+      <button id="toggle-prices" class="w-full text-left flex justify-between items-center py-2 text-blue-600 font-medium">
+        <span>Listas de Precios</span>
+        <i class="fa fa-chevron-down transition-transform"></i>
+      </button>
+      <div id="mobile-prices" class="hidden mt-3 grid grid-cols-1 sm:grid-cols-2 gap-2">
+        <a href="https://www.ds3comunicaciones.com/AMP/precios_amp.html" target="_blank" class="block px-3 py-1 text-xs md:text-md text-blue-600 hover:underline font-medium rounded hover:bg-blue-50">Lista de precios AMP</a>
+        <a href="https://www.ds3comunicaciones.com/amphenol/precios_amphenol.html" target="_blank" class="block px-3 py-1 text-xs md:text-md text-blue-600 hover:underline font-medium rounded hover:bg-blue-50">Lista de precios Amphenol</a>
+        <a href="https://www.ds3comunicaciones.com/andrew/precios_andrew.html" target="_blank" class="block px-3 py-1 text-xs md:text-md text-blue-600 hover:underline font-medium rounded hover:bg-blue-50">Lista de precios Andrew</a>
+        <a href="https://www.ds3comunicaciones.com/apc/precios_apc.html" target="_blank" class="block px-3 py-1 text-xs md:text-md text-blue-600 hover:underline font-medium rounded hover:bg-blue-50">Lista de precios APC</a>
+        <a href="https://www.ds3comunicaciones.com/cisco/precios_cisco.html" target="_blank" class="block px-3 py-1 text-xs md:text-md text-blue-600 hover:underline font-medium rounded hover:bg-blue-50">Lista de precios CISCO</a>
+        <a href="https://www.ds3comunicaciones.com/dlink/precios_dlink.html" target="_blank" class="block px-3 py-1 text-xs md:text-md text-blue-600 hover:underline font-medium rounded hover:bg-blue-50">Lista de precios D-Link</a>
+      </div>
+    </div>
+
+    <!-- Carrusel de marcas/imagenes (responsive) -->
+    <section id="brands-carousel" class="py-6 bg-white">
+      <div class="container mx-auto px-4 max-w-6xl">
+        <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Marcas y Productos Relacionados</h3>
+        <div class="relative">
+          <div id="carousel" class="flex gap-4 overflow-x-auto scrollbar-hide snap-x snap-mandatory py-4 px-2">
+            <!-- Repetimos todas las marcas para tener un carrusel amplio (se hace loop en JS) -->
+            <div class="snap-start flex-shrink-0 w-56 h-28 bg-slate-50 rounded-lg shadow flex items-center justify-center p-3"><img src="http://www.ds3comunicaciones.com/belden/images/ALFA_logo1.gif" class="max-h-full object-contain" alt="Alfa" /></div>
+            <div class="snap-start flex-shrink-0 w-56 h-28 bg-slate-50 rounded-lg shadow flex items-center justify-center p-3"><img src="http://www.ds3comunicaciones.com/belden/images/airlivelogo.gif" class="max-h-full object-contain" alt="Airlive" /></div>
+            <div class="snap-start flex-shrink-0 w-56 h-28 bg-slate-50 rounded-lg shadow flex items-center justify-center p-3"><img src="http://www.ds3comunicaciones.com/andrew/images/logo_andrew.jpg" class="max-h-full object-contain" alt="Andrew" /></div>
+            <div class="snap-start flex-shrink-0 w-56 h-28 bg-slate-50 rounded-lg shadow flex items-center justify-center p-3"><img src="http://www.ds3comunicaciones.com/belden/images/amp_logo2-91x20.jpg" class="max-h-full object-contain" alt="AMP" /></div>
+            <div class="snap-start flex-shrink-0 w-56 h-28 bg-slate-50 rounded-lg shadow flex items-center justify-center p-3"><img src="http://www.ds3comunicaciones.com/belden/images/amphenol_logo-100x21.jpg" class="max-h-full object-contain" alt="Amphenol" /></div>
+            <div class="snap-start flex-shrink-0 w-56 h-28 bg-slate-50 rounded-lg shadow flex items-center justify-center p-3"><img src="http://www.ds3comunicaciones.com/belden/images/Belden-Logo-93x15.jpg" class="max-h-full object-contain" alt="Belden" /></div>
+            <div class="snap-start flex-shrink-0 w-56 h-28 bg-slate-50 rounded-lg shadow flex items-center justify-center p-3"><img src="http://www.ds3comunicaciones.com/cisco/images/logo-cisco.gif" class="max-h-full object-contain" alt="Cisco" /></div>
+            <div class="snap-start flex-shrink-0 w-56 h-28 bg-slate-50 rounded-lg shadow flex items-center justify-center p-3"><img src="http://www.ds3comunicaciones.com/dahua/images/dahua_logo.jpg" class="max-h-full object-contain" alt="Dahua" /></div>
+            <div class="snap-start flex-shrink-0 w-56 h-28 bg-slate-50 rounded-lg shadow flex items-center justify-center p-3"><img src="http://www.ds3comunicaciones.com/belden/images/D-Link_Logo-100x26.jpg" class="max-h-full object-contain" alt="D-Link" /></div>
+            <div class="snap-start flex-shrink-0 w-56 h-28 bg-slate-50 rounded-lg shadow flex items-center justify-center p-3"><img src="http://www.ds3comunicaciones.com/belden/images/dixon_logo-100x19.jpg" class="max-h-full object-contain" alt="Dixon" /></div>
+            <div class="snap-start flex-shrink-0 w-56 h-28 bg-slate-50 rounded-lg shadow flex items-center justify-center p-3"><img src="http://www.ds3comunicaciones.com/FibreFab/images/logo_fibrefab.png" class="max-h-full object-contain" alt="FibreFab" /></div>
+            <div class="snap-start flex-shrink-0 w-56 h-28 bg-slate-50 rounded-lg shadow flex items-center justify-center p-3"><img src="http://www.ds3comunicaciones.com/lanpro/images/lanpro_logo.jpg" class="max-h-full object-contain" alt="LanPro" /></div>
+            <div class="snap-start flex-shrink-0 w-56 h-28 bg-slate-50 rounded-lg shadow flex items-center justify-center p-3"><img src="http://www.ds3comunicaciones.com/sitebuilder/images/lcom_logo-100x23.jpg" class="max-h-full object-contain" alt="L-Com" /></div>
+            <div class="snap-start flex-shrink-0 w-56 h-28 bg-slate-50 rounded-lg shadow flex items-center justify-center p-3"><img src="http://www.ds3comunicaciones.com/belden/images/mikrotik_logo-100x24.png" class="max-h-full object-contain" alt="MikroTik" /></div>
+            <div class="snap-start flex-shrink-0 w-56 h-28 bg-slate-50 rounded-lg shadow flex items-center justify-center p-3"><img src="http://www.ds3comunicaciones.com/panduit/images/panduit_logo.jpg" class="max-h-full object-contain" alt="Panduit" /></div>
+            <div class="snap-start flex-shrink-0 w-56 h-28 bg-slate-50 rounded-lg shadow flex items-center justify-center p-3"><img src="http://www.ds3comunicaciones.com/satra/images/satra.JPG" class="max-h-full object-contain" alt="Satra" /></div>
+            <div class="snap-start flex-shrink-0 w-56 h-28 bg-slate-50 rounded-lg shadow flex items-center justify-center p-3"><img src="http://www.ds3comunicaciones.com/siemon/images/siemon_logo1.GIF" class="max-h-full object-contain" alt="Siemon" /></div>
+            <div class="snap-start flex-shrink-0 w-56 h-28 bg-slate-50 rounded-lg shadow flex items-center justify-center p-3"><img src="http://www.ds3comunicaciones.com/belden/images/tp-link_logo-100x13.jpg" class="max-h-full object-contain" alt="TP-Link" /></div>
+            <div class="snap-start flex-shrink-0 w-56 h-28 bg-slate-50 rounded-lg shadow flex items-center justify-center p-3"><img src="http://www.ds3comunicaciones.com/belden/images/trendnet_logo-100x20.jpg" class="max-h-full object-contain" alt="Trendnet" /></div>
+            <div class="snap-start flex-shrink-0 w-56 h-28 bg-slate-50 rounded-lg shadow flex items-center justify-center p-3"><img src="http://www.ds3comunicaciones.com/belden/images/ubnt_logo-100x47.png" class="max-h-full object-contain" alt="Ubiquiti" /></div>
+          </div>
+
+          <!-- Controls -->
+          <button id="carousel-prev" class="hidden md:flex items-center justify-center absolute left-0 top-1/2 -translate-y-1/2 bg-white bg-opacity-80 rounded-full w-9 h-9 shadow">‹</button>
+          <button id="carousel-next" class="hidden md:flex items-center justify-center absolute right-0 top-1/2 -translate-y-1/2 bg-white bg-opacity-80 rounded-full w-9 h-9 shadow">›</button>
+        </div>
+      </div>
+    </section>
+
     <!-- PRODUCTOS SIMILARES A ESTE  -->
     <section class="py-8 bg-gray-50">
       <div class="container mx-auto px-4 max-w-6xl">
         <!-- Encabezado -->
-        <div class="text-center mb-8">
-          <h2 class="text-2xl md:text-3xl font-bold text-white bg-[#049FD9] py-4 px-6 rounded-lg shadow-md inline-block">
+        <div class="text-center mb-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white bg-[#049FD9] py-3 px-4 rounded-lg shadow-md inline-block">
             También Disponible: Cisco Catalyst 9200 en stock
           </h2>
         </div>
@@ -1137,7 +1388,30 @@ Switch Cisco Catalyst  C9200L-24P,  capa L3 con 24 puertos Gigabit PoE+ (370W) ,
       </div>
     </div>
   </footer>
+  <!-- Botón flotante y modal de contacto -->
+  <div id="contact-fab" class="fixed right-4 bottom-4 z-50">
+    <button id="open-contact-modal" class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center focus:outline-none" aria-label="Contactar">
+      <i class="fab fa-whatsapp text-2xl"></i>
+    </button>
+  </div>
+
+  <div id="contact-modal" class="fixed inset-0 bg-black bg-opacity-60 hidden z-50 items-center justify-center p-4">
+    <div role="dialog" aria-modal="true" aria-labelledby="contact-title" class="bg-white rounded-lg shadow-lg max-w-sm w-full p-4">
+      <div class="flex items-center justify-between mb-3">
+        <h3 id="contact-title" class="font-semibold text-lg">Contactar con DS3</h3>
+        <button id="close-contact-modal" class="text-gray-500 hover:text-gray-700 focus:outline-none" aria-label="Cerrar"><i class="fa fa-times"></i></button>
+      </div>
+      <p class="text-sm text-gray-600 mb-3">¿Querés que te contacten por WhatsApp o preferís que te llamemos?</p>
+      <div class="flex gap-2">
+        <a id="wa-contact" href="https://wa.me/994428965?text=Hola%20necesito%20asistencia%20sobre%20el%20producto" target="_blank" class="flex-1 bg-green-500 text-white text-center px-4 py-2 rounded hover:bg-green-600">WhatsApp</a>
+        <a id="call-contact" href="tel:+51994428965" class="flex-1 bg-blue-600 text-white text-center px-4 py-2 rounded hover:bg-blue-700">Llamar</a>
+      </div>
+      <p class="text-xs text-gray-400 mt-3">También podés escribir: <a href="mailto:netperu100@hotmail.com" class="text-blue-600 underline">netperu100@hotmail.com</a></p>
+    </div>
+  </div>
+
   <!-- CARGA DE JAVASCRIPT  SECUNDARIA-->
+  <script src="./js/product.js" defer></script>
   <script src="./js/change_tabs.js"></script>
 </body>
 

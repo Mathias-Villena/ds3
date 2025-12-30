@@ -1,0 +1,126 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Sitio web de ds3comunicaciones, líder en soluciones de redes y comunicaciones. Ofrecemos productos para WiFi y extensión de señal." />
+  <meta name="keywords"
+    content="En Peru, ANTENA HYPERLINK, internet inalambrico,ANTENA PARA INTERNET,Antena Omnidireccional,Antena de panel, Antena 5.8 UAP-AC-EDU AccessPoint UAP-AC-EDU para interior de Doble banda 5GHz y 2.4 GHz , 802.11a/b/g/n/ac, MIMO3x3 ( 2,4 GHz ) 22dBm 450 Mbps , MIMO3x3 ( 5 GHz) 22dBm / 1300Mbps, tres Antenas de doble banda de 2,4 GHz : 3 dBi , 5 GHz : 3 dBi / 01 puerto Ethernet 10/100/1000 Mbps, PoE Pasivo 48v o 802.3at PoE+ compatibles, Incluye PoE 48V 0.5A Gige , software y kit para montaje, marca UBiQuiTi" />
+  <meta name="author" content="ds3comunicaciones" />
+  <!-- tailwin cdn -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- fontawesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- css  -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- carga del navbar -->
+  <script src="./js/nav.js"></script>
+  <script src="./js/product.js" defer></script>
+
+  <!-- titulo de la pagina -->
+  <title>
+    Cable UTP AMP Categoria 6 Chaqueta CMR 23AWG - 6-1427200-4
+  </title>
+</head>
+
+<body>
+  <!-- NAVBAR PRINCIPAL (inserción para visibilidad) -->
+  <nav class="bg-white w-full shadow-md border" data-main-inserted="1">
+    <div class="container mx-auto px-4">
+      <div class="hidden lg:flex justify-between items-center py-4">
+        <div class="flex items-center">
+          <img src="https://www.ds3comunicaciones.com/mikrotik/images/Logo1.jpg" alt="NetPeru Logo" class="h-12 mr-3" />
+        </div>
+        <div class="flex space-x-8 text-black">
+          <div class="flex items-center"><i class="fas fa-phone-alt mr-2 text-black "></i><div><p class="text-sm font-bold">533-4339</p><p class="text-sm font-bold">994-428-965</p></div></div>
+          <div class="flex items-center"><i class="fas fa-envelope mr-2 text-black "></i><span class="text-sm font-bold">netperu100@hotmail.com</span></div>
+        </div>
+        <div class="flex items-center"><button id="search-button" class="p-2 rounded-full hover:bg-gray-100 transition-colors"><i class="fas fa-search text-black"></i></button></div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SUBMENU DE MARCA DEPENDIENDO DEL PRODUCTO -->
+  <nav class="bg-white border-b border-gray-200 shadow-sm">
+    <div class="relative">
+      <!-- Contenedor con scroll horizontal -->
+      <div class="nav-container flex justify-evenly overflow-x-auto md:py-2 px-4 space-x-2 scrollbar-hide">
+        <!-- Item 1 -->
+        <a href="https://www.ds3comunicaciones.com/cisco/catalys_9200l.html"
+          class="nav-item flex items-center p-1.5 rounded-lg min-w-fit flex-shrink-0 space-x-1.5">
+          <div class="icon-container h-6 w-6 flex items-center justify-center">
+            <img src="./icons/Switch Catalyst.ico" class="nav-icon max-h-full max-w-full" alt="Switch Catalyst" />
+          </div>
+          <span class="text-xs font-medium text-gray-600 whitespace-nowrap">Switch Catalyst</span>
+        </a>
+
+        <!-- Item 2 -->
+        <a href="https://www.ds3comunicaciones.com/cisco/bussines_sg350.html"
+          class="nav-item flex items-center p-1.5 rounded-lg min-w-fit flex-shrink-0 space-x-1.5">
+          <div class="icon-container h-6 w-6 flex items-center justify-center">
+            <img src="./icons/Cisco Business.ico" class="nav-icon max-h-full max-w-full" alt="Cisco Business" />
+          </div>
+          <span class="text-xs font-medium text-gray-600 whitespace-nowrap">Cisco Business</span>
+        </a>
+
+        <!-- Item 3 -->
+        <a href="https://www.ds3comunicaciones.com/cisco/precios_cisco_switch_industrial_b.html"
+          class="nav-item flex items-center p-1.5 rounded-lg min-w-fit flex-shrink-0 space-x-1.5">
+          <div class="icon-container h-6 w-6 flex items-center justify-center">
+            <img src="./icons/Switch Industrial.ico" class="nav-icon max-h-full max-w-full" alt="Switch Industrial" />
+          </div>
+          <span class="text-xs font-medium text-gray-600 whitespace-nowrap">Switch Industrial</span>
+        </a>
+
+        <!-- Item 4 -->
+        <a href="https://www.ds3comunicaciones.com/cisco/precios_cisco_access_point_b.html"
+          class="nav-item flex items-center p-1.5 rounded-lg min-w-fit flex-shrink-0 space-x-1.5">
+          <div class="icon-container h-6 w-6 flex items-center justify-center">
+            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M21 42C32.598 42 42 32.598 42 21C42 9.40202 32.598 0 21 0C9.40202 0 0 9.40202 0 21C0 32.598 9.40202 42 21 42Z"
+                fill="white" stroke="black" stroke-width="2" />
+
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M27 21C27 24.3137 24.3137 27 21 27C17.6863 27 15 24.3137 15 21C15 17.6863 17.6863 15 21 15C24.3137 15 27 17.6863 27 21Z"
+                fill="black" />
+
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M29 21C29 25.4183 25.4183 29 21 29C16.5817 29 13 25.4183 13 21C13 16.5817 16.5817 13 21 13C25.4183 13 29 16.5817 29 21Z"
+                fill="white" stroke="black" stroke-width="2" />
+            </svg>
+          </div>
+          <span class="text-xs font-medium text-gray-600 whitespace-nowrap">Aironet</span>
+        </a>
+
+        <!-- Item 5 -->
+        <a href="https://www.ds3comunicaciones.com/cisco/precios_cisco_telefonos_b.html"
+          class="nav-item flex items-center p-1.5 rounded-lg min-w-fit flex-shrink-0 space-x-1.5">
+          <div class="icon-container h-6 w-6 flex items-center justify-center">
+            <img src="./icons/Télefono.ico" class="nav-icon max-h-full max-w-full" alt="Teléfono" />
+          </div>
+          <span class="text-xs font-medium text-gray-600 whitespace-nowrap">Teléfono</span>
+        </a>
+
+        <!-- Item 6 -->
+        <a href="https://ds3comunicaciones.com/cisco/precios_cisco_meraki_b.html"
+          class="nav-item flex items-center p-1.5 rounded-lg min-w-fit flex-shrink-0 space-x-1.5">
+          <div class="icon-container h-6 w-6 flex items-center justify-center">
+            <img src="./icons/mariakii.ico" class="nav-icon max-h-full max-w-full" alt="Meraki" />
+          </div>
+          <span class="text-xs font-medium text-gray-600 whitespace-nowrap">Meraki</span>
+        </a>
+
+        <!-- Item 7 -->
+        <a href="#" class="nav-item flex items-center p-1.5 rounded-lg min-w-fit flex-shrink-0 space-x-1.5">
+          <div class="icon-container h-6 w-6 flex items-center justify-center">
+            <img src="./icons/Transceiver.ico" class="nav-icon max-h-full max-w-full" alt="Transceiver" />
+          </div>
+          <span class="text-xs font-medium text-gray-600 whitespace-nowrap">Transceiver</span>
+        </a>
+      </div>
+    </div>
+  </nav>
